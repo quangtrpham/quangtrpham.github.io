@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/cd5e338811.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <title>JARS Money Management System</title>
+</head>
+<body>
+    
+    <!-- Blur Background -->
+    <div class="blur-background"></div>
+    
+    <!-- Navbar Part -->
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <i class="fa-solid fa-jar"></i>
+            <a href="./index.html" class="navbar__logo-link">JARS</a>
+        </div>
+        
+        <div class="navbar__menu">
+            <ul class="menu">
+                <li class="menu__links">
+                    <a href="#home" class="menu__links-home">HOME</a>
+                </li>
+                
+                <li class="menu__links">
+                    <a href="#about" class="menu__links-about">ABOUT</a>
+                </li>
+                
+                <li class="menu__links">
+                    <a href="#contact" class="menu__links-contact">CONTACT</a>
+                </li>
+                
+                <label class="theme_switch">
+                    <input type="checkbox">
+                    <span class="slider">
+                        <div class="round_slider">
+                            <i class="fa-solid fa-moon"></i>
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+                    </span>
+                </label>
+            </ul>
+        </div>
+        
+        <div class="navbar__toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    
+    
+    <!-- Container Part -->
+    <div class="main">
+        <div class="main__body">
+            
+            <!-- HOME SECTION -->
+            <div class="home section" id="home">
+                <div class="grid wide">
+                        <div class="row">
+
+                            <div class="col l-12 m-12 c-12">
+                                <div class="text__income">
+                                    <h1></h1>
+                                </div>
+                            </div>
+
+                            <div class="col l-5 m-12 c-12">
+                                <div class="income">
+                                    <p>Enter Your Income($ or VND) Into The Bar</p>
+                                    <div class="income__field">
+                                        <input class="income__value" type="text" name="income" placeholder="EX: 500">
+                                        <select class="currency__select">
+                                            <option class="USD" value="USD">USD</option>
+                                            <option class="VND" value="VND">VND</option>
+                                        </select>
+                                    </div>
+                                    <span class="error"></span>
+                                    <a class="btn send_btn">Enter</a>
+                                    <!-- <input type="submit" value="Send" class="btn"> -->
+                                </div>
+                            </div>
+
+                            <div class="col l-7 m-12 c-12">
+                                <div class="text text-border">
+                                    <h1>What is JARS money management system?</h1>
+                                    <p>Basically, the 6 Jars Systems requires you to split your money into 6 different accounts or jars, each of which reveals distinct purposes and contains different proportions of your earnings. In fact, you can use a bank account or actual jars.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Change Light Of The Page -->
+                        <div class="light-dark-toggle">
+                            <i class="fa-solid fa-sun"></i>
+                            <i class="fa-solid fa-moon"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ABOUT SECTION -->
+                <div class="about section" id="about">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-12 m-12m c-12">
+                                <div class="about__heading">
+                                    <div class="about__introduction">
+                                        <img src="./img/wonder.png" alt="wonder">
+                                        <h2>WHAT ARE THOSE 6 JARS?</h2>
+                                    </div>
+                                    
+                                    <div class="about__image">
+                                        <img src="./img/6-jars.png" alt="6 Jars">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="basic-needs part">
+                                <div class="col l-3 m-12 c-12">
+                                    <div class="description__image">
+                                        <img src="./img/basic-needs.png" alt="Basic Needs" class="basic_needs-image">
+                                    </div>
+                                </div>
+                                
+                                <div class="col l-9 m-12 c-12">
+                                    <div class="description__text text-border">
+                                        <h2>Jar 1: Basic necessities (55% of your budget)</h2>
+                                        <p>Money in this jar is intended for covering daily expenses and paying bills. It will also cover your costs for rent, transport, taxes and food.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        <div class="private-reserves part">
+                            <div class="col l-9 m-12 c-12">
+                                <div class="description__text text-border">
+                                    <h2>Jar 2: Private reserves (10% of your budget)</h2>
+                                    <p>These savings can be used for large purchases. Spend this money when you want to buy a flat screen TV, an annual gym membership, or a car. This is your reserve fund that you should constantly replenish.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col l-3 m-12 c-12">
+                                <div class="description__image">
+                                    <img src="./img/private-reserves.png" alt="Private Reserves" class="private_reserves-image">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="long-term_savings part">
+                            <div class="col l-3 m-12 c-12">
+                                <div class="description__image">
+                                    <img src="./img/long-term-savings.png" alt="Long-term Savings" class="long-term_savings-image">
+                                </div>
+                            </div>
+                            
+                            <div class="col l-9 m-12 c-12">
+                                <div class="description__text text-border">
+                                    <h2>Jar 3: Long-term savings (10% of your budget)</h2>
+                                    <p>This is a guarantee for your future financial independence. You'll use money from this jar for investing and creating passive income sources. You <strong>shouldn't</strong> spend these savings until you get complete financial freedom. And even in this case, it's better to spend only the interest that you receive from these savings and not the savings itself.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="education part">
+                            <div class="col l-9 m-12 c-12">
+                                <div class="description__text text-border">
+                                    <h2>Jar 4: Education (10% of your budget)</h2>
+                                    <p>Money in this jar is intended to further your education and personal growth. Investing is a great way of allocating money, and you are the most valuable asset. Always keeps that in mind. Use this money to buy books, educational CDs, or courses - it will pay off later.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col l-3 m-12 c-12">
+                                <div class="description__image">
+                                    <img src="./img/education.png" alt="Education" class="education-image">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="entertainment part">
+                            <div class="col l-3 m-12 c-12">
+                                <div class="description__image">
+                                    <img src="./img/entertainment.png" alt="Entertainment" class="entertainment-image">
+                                </div>
+                            </div>
+                            
+                            <div class="col l-9 m-12 c-12">
+                                <div class="description__text text-border">
+                                    <h2>Jar 5: Entertainment (10% of your budget)</h2>
+                                    <p>You can spend this part of your budget for purchases that you don't buy regularly. For example, you can buy a bottle of expensive wine or go somewhere for vacation. Spend this money as you wish!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="charity-and-gifts part">
+                            <div class="col l-9 m-12 c-12">
+                                <div class="description__text text-border">
+                                    <h2>Jar 6: Charity and gifts (5% of your budget)</h2>
+                                    <p>Spend this money when you need to buy gifts for birthdays, weddings, and other celebrations. You can also donate this money to cancer aid associations, animal shelters, or just people who need help. </p>
+                                </div>
+                            </div>
+                            
+                            <div class="col l-3 m-12 c-12">
+                                <div class="description__image">
+                                    <img src="./img/charity.png" alt="Education" class="charity-and-gifts-image">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact section" id="contact">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-7 m-12 c-12">
+                            <div class="contact__left">
+                                <div class="contact__heading">
+                                    <p>Contact</p>
+                                    <h2>Let's Discuss This Project With Me</h2>
+                                </div>
+                                
+                                <div class="contact__facebook media">
+                                    <div class="facebook icon">
+                                        <a href="#home">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                    </div>
+                                    <div class="contact__content">
+                                        <p>Facebook</p>
+                                        <h3>https://www.facebook.com/pqt241</h3>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact__email media">
+                                    <div class="email icon">
+                                        <a href="#">
+                                            <i class="fa-regular fa-envelope"></i>
+                                        </a>
+                                    </div>
+                                    <div class="contact__content">
+                                        <p>Email</p>
+                                        <h3>quangtrpham@gmail.com</h3>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact__linkedin media">
+                                    <div class="linkedin icon">
+                                        <a href="#">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                    <div class="contact__content">
+                                        <p>linkedin</p>
+                                        <h3>https://www.linkedin.com/in/pqt241/</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-5 m-0 c-0">
+                            <div class="contact__right">
+                                <div class="contact__image">
+                                    <img src="./img/contact.png" alt="Contact Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <div class="footer__content">
+                                <p>©2022 All Right Reserved</p>
+                                <p>Designed By Phạm Quang Trinh</p>
+                                <p>quangtrpham@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+    
+    
+    <!-- SCRIPT PART -->
+    <script src="apps.js"></script>
+    <!-- <script src="calculatorApp.js"></script> -->
+</body>
+</html>
+

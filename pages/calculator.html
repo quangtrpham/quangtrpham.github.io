@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculatorStyle.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../grid.css">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="calculatorResponsive.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/cd5e338811.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <title>JARS Money Management System Result</title>
+</head>
+<body>
+    <!-- Blur Background -->
+    <div class="blur-background"></div>
+
+    <!-- Navbar Part -->
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <i class="fa-solid fa-jar"></i>
+            <a href="../index.html" class="navbar__logo-link">JARS</a>
+        </div>
+        
+        <div class="navbar__menu">
+            <ul class="menu">
+                <li class="menu__links">
+                    <a href="../index.html" class="menu__links-mainPage">Back to the main page</a>
+                </li>
+                
+                <label class="theme_switch">
+                    <input type="checkbox">
+                    <span class="slider">
+                        <div class="round_slider">
+                            <i class="fa-solid fa-moon"></i>
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+                    </span>
+                </label>
+            </ul>
+        </div>
+
+        <div class="navbar__toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </nav>
+
+    <!-- Container Part -->
+    <div class="main">
+        <div class="main__body">
+            <div class="grid wide">
+                <!-- HEADING SECTION -->
+                <div class="heading">
+                    <h1>Your result is here</h1>
+                    <div class="heading__arrow">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <!-- CONTENT SECTION -->
+                <div class="content">
+
+                    <!-- Basic Needs -->
+                    <div class="content__main">
+                        <div class="row">
+                            <div class="col l-5 m-12 c-12">
+                                <div class="content__image">
+                                    <img src="./calculatorImg/basicNeeds.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col l-7 m-12 c-12">
+                                <div class="content__main-text">
+                                    <h3 class="heading__content">Basic necessities(<strong class="fifty-five-percent">...</strong>) - 55%</h3>
+                                    <p>Money in this jar is intended for covering daily expenses and paying bills. It will also cover your costs for rent, transport, taxes and food.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Private Reserves -->
+                    <div class="content__main">
+                        <div class="row">
+                            <div class="col l-5 m-12 c-12">
+                                <div class="content__image">
+                                    <img src="./calculatorImg/privateReservse.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col l-7 m-12 c-12">
+                                <div class="content__main-text">
+                                    <h3 class="heading__content">Private Reserves(<strong class="ten-percent">...</strong>) - 10%</h3>
+                                    <p>These savings can be used for large purchases. Spend this money when you want to buy a flat screen TV, an annual gym membership, or a car. This is your reserve fund that you should constantly replenish.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Long-term Savings -->
+                    <div class="content__main">
+                        <div class="row">
+                            <div class="col l-5 m-12 c-12">
+                                <div class="content__image">
+                                    <img src="./calculatorImg/long-termSavings.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col l-7 m-12 c-12">
+                                <div class="content__main-text">
+                                    <h3 class="heading__content">Long-term Savings(<strong class="ten-percent">...</strong>) - 10%</h3>
+                                    <p>This is a guarantee for your future financial independence. You'll use money from this jar for investing and creating passive income sources. You shouldn't spend these savings until you get complete financial freedom. And even in this case, it's better to spend only the interest that you receive from these savings and not the savings itself.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="content__main">
+                        <div class="row">
+                            <div class="col l-5 m-12 c-12">
+                                <div class="content__image">
+                                    <img src="./calculatorImg/education.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col l-7 m-12 c-12">
+                                <div class="content__main-text">
+                                    <h3 class="heading__content">Education(<strong class="ten-percent">...</strong>) - 10%</h3>
+                                    <p>Money in this jar is intended to further your education and personal growth. Investing is a great way of allocating money, and you are the most valuable asset. Always keeps that in mind. Use this money to buy books, educational CDs, or courses - it will pay off later.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Entertainment -->
+                    <div class="content__main">
+                        <div class="row">
+                            <div class="col l-5 m-12 c-12">
+                                <div class="content__image">
+                                    <img src="./calculatorImg/entertainment.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col l-7 m-12 c-12">
+                                <div class="content__main-text">
+                                    <h3 class="heading__content">Entertainment(<strong class="ten-percent">...</strong>) - 10%</h3>
+                                    <p>You can spend this part of your budget for purchases that you don't buy regularly. For example, you can buy a bottle of expensive wine or go somewhere for vacation. Spend this money as you wish!</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Charity and Gifts -->
+                    <div class="content__main">
+                        <div class="row">
+                            <div class="col l-5 m-12 c-12">
+                                <div class="content__image">
+                                    <img src="./calculatorImg/charityGifts.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col l-7 m-12 c-12">
+                                <div class="content__main-text">
+                                    <h3 class="heading__content">Charity and Gifts(<strong class="five-percent">...</strong>) - 5%</h3>
+                                    <p>Spend this money when you need to buy gifts for birthdays, weddings, and other celebrations. You can also donate this money to cancer aid associations, animal shelters, or just people who need help.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FOOTER -->
+                <footer class="footer">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="footer__content">
+                                    <p>©2022 All Right Reserved</p>
+                                    <p>Designed By Phạm Quang Trinh</p>
+                                    <p>quangtrpham@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+                <!-- Change Light Of The Page -->
+                <div class="light-dark-toggle">
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    
+    
+    <!-- SCRIPT PART -->
+    <script src="./calculatorApp.js"></script>
+    <!-- <script src="../apps.js"></script> -->
+</body>
+</html>
+

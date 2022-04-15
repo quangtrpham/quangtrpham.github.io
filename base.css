@@ -1,0 +1,22 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    height: 50px;
+    border: none;
+    color: var(--white-color);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #5457b3;
+    background-image: linear-gradient(to top, #df0c0c 0%, #e47e25 100%);
+}
+
+.text-border {
+    border: 2px solid #ccc;
+    padding: 30px 27px;
+    border-radius: 16px;
+    text-align: justify;
+}

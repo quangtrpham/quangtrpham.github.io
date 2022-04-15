@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+/* NAVBAR */
+
+.navbar__toggle {
+    color: var(--whiteColor);
+    display: none;
+}
+
+/* HEADING SECTION */
+.heading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+    font-family: 'Kalam', cursive;
+}
+
+
+.heading h1 {
+    font-size: 80px;
+}
+
+.heading__arrow {
+    margin: 70px 0;
+}
+
+
+.heading__arrow i {
+    font-size: 70px;
+    animation: upDown 2s linear infinite;
+}
+
+@keyframes upDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(70%);
+    }
+}
+
+/* LIGHT-DARK TOGGLE */
+.light-dark-toggle {
+    height: 50px;
+    width: 50px;
+    background: var(--darkColor);
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--whiteColor);
+    cursor: pointer;
+}
+
+.main__body .light-dark-toggle:hover {
+    color: #F4F701;
+    transition: 0.3s;
+}
+
+.main__body.dark {
+    --backgroundColor: #181818;
+    --textColor: #fff;
+}
+
+.main__body.light {
+    --backgroundColor: #f1f8fc;
+    --textColor: black;
+}
+
+.fa-solid {
+    font-size: 24px;
+}
+
+.fa-solid.fa-sun {
+    display: none;
+}
+
+.fa-solid.fa-moon {
+    display: block;
+}
+
+.main__body.dark .light-dark-toggle {
+    background-color: #f1f8fc;
+    color: #45424b;
+    transition: 0.3s;
+}
+
+
+.main__body.dark .light-dark-toggle:hover {
+    color: #FD9701;
+}
+
+.main__body.dark .light-dark-toggle .fa-sun {
+    display: block;
+}
+
+.main__body.dark .light-dark-toggle .fa-moon {
+    display: none;
+}
+
+/* CONTENT SECTION */
+.content {
+    margin-top: 50px;
+}
+
+.content__main {
+    margin-bottom: 56px;
+}
+
+.content__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__image img {
+    height: 78%;
+    width: 78%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content__main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.heading__content {
+    font-size: 30px;
+}
+
+.content__main-text p {
+    font-size: 22px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.fifty-five-percent {
+    color: var(--secondColor);
+}
+
+.ten-percent {
+    color: var(--secondColor);
+
+}
+
+.five-percent {
+    color: var(--secondColor);
+
+}
